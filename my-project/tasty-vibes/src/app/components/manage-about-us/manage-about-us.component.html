@@ -1,0 +1,36 @@
+<section class="admin-about-us">
+    <div class="container text-center">
+      <h2><strong>Manage About Us</strong></h2>
+  
+      <form id="about-us-form" (ngSubmit)="saveAboutUsContent()">
+        <div class="form-group">
+          <label for="about-text"><strong>About Us Text</strong></label>
+          <textarea
+            id="about-text"
+            name="about-text"
+            class="form-control"
+            rows="4"
+            [(ngModel)]="aboutUsContent.description"
+            placeholder="Enter the About Us content..."
+          ></textarea>
+        </div>
+  
+        <div class="form-group">
+          <label for="about-image"><strong>About Us Image URL</strong></label>
+          <input
+            type="text"
+            id="about-image"
+            name="about-image"
+            class="form-control"
+            [(ngModel)]="aboutUsContent.imageUrl"
+            placeholder="Enter image URL"
+          />
+        </div>
+  
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" (click)="saveAboutUsContent()">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  

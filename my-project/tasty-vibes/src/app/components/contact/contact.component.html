@@ -1,0 +1,36 @@
+<br>
+<div class="contact-form-container">
+    <h2 class="con text-center">Contact Us</h2>
+    
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" formControlName="name" type="text" />
+        <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+          <small *ngIf="contactForm.get('name')?.hasError('required')">*Name is required.</small>
+          <small *ngIf="contactForm.get('name')?.hasError('minlength')">*Name must be at least 3 characters long.</small>
+        </div>
+      </div>
+  
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" formControlName="email" type="email" />
+        <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+          <small *ngIf="contactForm.get('email')?.hasError('required')">*Email is required.</small>
+          <small *ngIf="contactForm.get('email')?.hasError('email')">*Please enter a valid email.</small>
+        </div>
+      </div>
+  
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" formControlName="message"></textarea>
+        <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+          <small *ngIf="contactForm.get('message')?.hasError('required')">*Message is required.</small>
+          <small *ngIf="contactForm.get('message')?.hasError('minlength')">*Message must be at least 10 characters long.</small>
+        </div>
+      </div>
+  
+      <button type="submit" [disabled]="contactForm.invalid || isSubmitted">Submit</button>
+    </form>
+  </div>
+  <br>

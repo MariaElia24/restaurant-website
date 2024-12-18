@@ -1,0 +1,44 @@
+<div class="menu-container">
+  <h2>Our Menu</h2>
+
+  <br>
+
+  <div class="search-container">
+    <input 
+      type="text" 
+      [(ngModel)]="searchQuery" 
+      (ngModelChange)="searchMeals()" 
+      placeholder="Search meals..." 
+      class="search-input" />
+    <button class="btn" (ngModelChange)="searchMeals()">Search</button>
+  </div>
+
+  <br>
+
+  <div *ngIf="filteredMeals && filteredMeals.length > 0; else noMeals">
+    <div *ngFor="let meal of filteredMeals" class="meal-item">
+      <img [src]="meal.imageUrl" alt="{{ meal.name }}" class="meal-image" />
+      <div class="meal-info">
+        <h3>{{ meal.name }}</h3>
+        <p>{{ meal.description }}</p>
+        <p class="price">${{ meal.price | number:'1.2-2' }}</p>
+        <button class="btn" (click)="addtocart(meal)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noMeals>
+    <p>No meals available at the moment.</p>
+  </ng-template>
+
+  <br />
+
+  <div>
+    <button class="btn text-center" routerLink="/cart" (click)="counter()">
+      Go To Cart
+    </button>
+    <p><strong>Items in Cart: {{ cartcount }}</strong></p>
+  </div>
+
+  <br />
+</div>

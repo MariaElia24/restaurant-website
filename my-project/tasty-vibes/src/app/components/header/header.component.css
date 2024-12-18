@@ -1,0 +1,172 @@
+/* Navbar container */
+.navbar {
+  background-color: #fff; /* Light background */
+  color: #333; /* Dark text */
+  padding: 10px 30px;
+  font-family: 'Arial', sans-serif;
+  align-items: center;
+}
+
+/* Brand/Logo Styling */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: brown; /* Tomato color for a restaurant feel */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: #333;
+  font-size: 16px;
+  margin-right: 20px;
+  padding: 8px 12px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rosybrown;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Active link */
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid rosybrown;
+}
+
+/* Dropdown menu */
+.dropdown .dropdown-toggle {
+  color: #333;
+  font-size: 16px;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  transition: color 0.3s;
+}
+
+.dropdown .dropdown-toggle:hover {
+  color: rosybrown;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: rosybrown;
+  color: white;
+}
+
+/* Search Form */
+.form-control {
+  border-radius: 20px;
+  padding: 8px 15px;
+}
+
+.btn-outline-success {
+  border-radius: 20px;
+  padding: 8px 20px;
+  border-color: rosybrown;
+  color: rosybrown;
+}
+
+.btn-outline-success:hover {
+  background-color: rosybrown;
+  color: white;
+  border-color: rosybrown;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .dropdown-item {
+    padding: 12px;
+    text-align: left;
+  }
+
+  .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+  
+  }
+}
+
+nav{
+  display: block;
+  background: url('/images/rosy.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  height: 80px;
+  padding: 0 20px;
+  
+
+}
+
+
+:host {
+  display: block;
+  min-height: 100vh;
+  width: 100vw; 
+  background: url('/images/rosy.jpg') no-repeat center center fixed;
+  background-size: cover; 
+  margin: 0;
+}
+
+.container {
+  background: url('/images/rosy.jpg');
+  color: white;
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.btn{
+  color: white;
+  background-color: rosybrown;
+}
+.or{
+  color:white;
+}

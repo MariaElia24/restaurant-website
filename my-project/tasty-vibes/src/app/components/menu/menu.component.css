@@ -1,0 +1,33 @@
+.menu-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .meal-item {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .meal-image {
+    max-width: 150px;
+    border-radius: 8px;
+  }
+  
+  .meal-info {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: green;
+  }
+  .btn{
+    color: white;
+    background-color: rosybrown;
+  }
+  

@@ -1,0 +1,25 @@
+<div class="order-details">
+  <h2>Place Your Order</h2>
+
+  <div *ngFor="let item of orderItems" class="meal-details">
+    <img [src]="item.imageUrl" alt="Meal Image" class="meal-image">
+    <h3>{{ item.name }}</h3>
+    <p>{{ item.description }}</p>
+    <p>Price: ${{ item.price }}</p>
+    <p>Quantity: {{ item.quantity }}</p>
+  </div>
+
+  <div class="order-form">
+    <label for="address">Delivery Address</label>
+    <input type="text" id="address" [(ngModel)]="orderDetails.address" placeholder="Enter your address" required>
+
+    <label for="payment">Payment Method</label>
+    <select id="payment" [(ngModel)]="orderDetails.paymentMethod" required>
+      <option value="creditCard">Credit Card</option>
+      <option value="paypal">PayPal</option>
+      <option value="cash">Cash on Delivery</option>
+    </select>
+  </div>
+
+  <button (click)="confirmOrder()" class="btn">Confirm Order</button>
+</div>

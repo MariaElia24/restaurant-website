@@ -1,0 +1,36 @@
+.admin-about-us {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.branches-section {
+  margin-top: 40px;
+}
+
+.branch-form {
+  margin-bottom: 30px;
+}
+
+.branch-form input,
+.branch-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+  border-color: #45a049;
+}
+

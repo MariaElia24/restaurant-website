@@ -1,0 +1,107 @@
+[
+    {
+      "id": 1,
+      "name": "Fried Chicken Fingers",
+      "imageUrl": "/images/photo_2024-11-29_14-18-12.jpg",
+      "description": "Fried chicken fingers with ketchup sauce.",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "name": "Chicken Spring Rolls",
+      "imageUrl": "/images/photo_2.jpg",
+      "description": "4 pieces of chicken spring rolls served with sweet chili sauce",
+      "price": 100
+    },
+    {
+      "id": 3,
+      "name": "Bego Offe",
+      "imageUrl": "/images/photo_3.jpg",
+      "description": "Served with Big Wrap Sandwich , Rezotto",
+      "price": 190
+    },
+    {
+      "id": 4,
+      "name": "Caesar Salad",
+      "imageUrl": "/images/photo_4.jpg",
+      "description": "Fresh lettuce with pieces of grilled chicken topped with croutons bread and parmesan cheese with Caesar dressing",
+      "price": 130
+    },
+    {
+      "id": 5,
+      "name": "Original Chicken Ranch",
+      "imageUrl": "/images/photo_5.jpg",
+      "description": "Grilled chicken, mushrooms, green peppers, onions, mozzarella, pizza sauce and topped with ranch sauce",
+      "price": 270
+    },
+    {
+      "id": 6,
+      "name": "Pepperoni",
+      "imageUrl": "/images/photo_6.jpg",
+      "description": "Pepperoni with a spicy seasoning, pizza sauce, and mozzarella",
+      "price": 200
+    },
+    {
+      "id": 7,
+      "name": "Margherita",
+      "imageUrl": "/images/photo_7.jpg",
+      "description": "Layers of mozzarella and signature pizza sauce",
+      "price": 230
+    },
+    {
+      "id": 8,
+      "name": "Vegetarian",
+      "imageUrl": "/images/photo_8.jpg",
+      "description": "Tomatoes, bell peppers, mushrooms, olives, onions, mozzarella cheese, and pizza sauce",
+      "price": 250
+    },
+    {
+      "id": 9,
+      "name": "Mushrooms",
+      "imageUrl": "/images/photo_9.jpg",
+      "description": "Layers of mushrooms, mozzarella cheese, pizza sauce and Parmesan",
+      "price": 190
+    },
+    {
+      "id": 10,
+      "name": "Cheese Lovers",
+      "imageUrl": "/images/photo_10.jpg",
+      "description": "Pizza sauce topped with six cheeses: Gouda, cheddar, Emmental, Swiss cheese, Parmesan, and mozzarella",
+      "price": 240
+    },
+    {
+      "id": 11,
+      "name": "Shiitake Mushroom",
+      "imageUrl": "/images/photo_11.jpg",
+      "description": "Sautéed mushroom, cheddar cheese, and creamy mayonnaise spread on top of our pure beef burger patty",
+      "price": 300
+    },
+    {
+      "id": 12,
+      "name": "Bacon Mushroom Jack",
+      "imageUrl": "/images/photo_12.jpg",
+      "description": "Beef bacon with fresh sautéed mushroom, cheddar cheese, and creamy mayonnaise.",
+      "price": 280
+    },
+    {
+      "id": 13,
+      "name": "Mozzarella Cheese Sticks",
+      "imageUrl": "/images/photo_13.jpg",
+      "description": "Savor cheesy bliss Mozzarella Cheese Sticks crispy on the outside, gooey on the inside, and served with zesty marinara for a perfect crunchy, cheesy, and tangy treat.",
+      "price": 200
+    },
+    {
+      "id": 14,
+      "name": "Shrimp Love",
+      "imageUrl": "/images/photo_14.jpg",
+      "description": "4 pieces, served with spicy mayonnaise",
+      "price": 300
+    },
+    {
+      "id": 15,
+      "name": "Chilli Fries With Cheese",
+      "imageUrl": "/images/photo_15.jpg",
+      "description": "French fries, bell pepper, olives, jalapeno and cheese",
+      "price": 120
+    }
+]

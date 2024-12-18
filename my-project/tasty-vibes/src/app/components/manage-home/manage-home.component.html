@@ -1,0 +1,48 @@
+<br><br>
+<div class="container">
+  <h2 class="text-center my-4">Manage Home Page</h2>
+  
+  <div class="section">
+    <h3>Hero Section</h3>
+    <div class="form-group">
+      <label for="heroImage">Hero Image URL</label>
+      <input [(ngModel)]="heroImage" type="text" id="heroImage" class="form-control" placeholder="Enter image URL" />
+    </div>
+    <div class="form-group">
+      <label for="heroText">Hero Text</label>
+      <input [(ngModel)]="heroText" type="text" id="heroText" class="form-control" placeholder="Enter hero text" />
+    </div>
+  </div>
+  
+  <div class="section">
+    <h3>About Section</h3>
+    <div class="form-group">
+      <label for="aboutText">About Text</label>
+      <textarea [(ngModel)]="aboutText" id="aboutText" class="form-control" rows="4" placeholder="Enter about text"></textarea>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h3>Menu Items</h3>
+    <div *ngFor="let item of menuItems; let i = index" class="menu-item">
+      <h4>Dish {{i + 1}}</h4>
+      <div class="form-group">
+        <label for="menuItemName">Dish Name</label>
+        <input [(ngModel)]="item.name" type="text" class="form-control" placeholder="Dish Name" />
+      </div>
+      <div class="form-group">
+        <label for="menuItemDescription">Dish Description</label>
+        <textarea [(ngModel)]="item.description" class="form-control" rows="3" placeholder="Dish Description"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="menuItemImage">Dish Image URL</label>
+        <input [(ngModel)]="item.image" type="text" class="form-control" placeholder="Dish Image URL" />
+      </div>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <button (click)="saveChanges()" class="btn btn-primary w-100">Save Changes</button>
+  </div>
+</div>
+<br><br>

@@ -1,0 +1,24 @@
+<div>
+    <h3>{{ isEditing ? 'Edit Meal' : 'Add New Meal' }}</h3>
+    <form (ngSubmit)="isEditing ? updateMeal() : addMeal()">
+      <input [(ngModel)]="editableMeal.name" name="name" placeholder="Meal Name" required />
+      <input [(ngModel)]="editableMeal.description" name="description" placeholder="Meal Description" required />
+      <input [(ngModel)]="editableMeal.price" name="price" type="number" placeholder="Meal Price" required />
+      <input [(ngModel)]="editableMeal.imageUrl" name="imageUrl" placeholder="Image URL" required />
+      <button type="submit">{{ isEditing ? 'Update' : 'Add' }}</button>
+      <button type="button" (click)="resetForm()">Cancel</button>
+    </form>
+  </div>
+  
+  <h3>Meals</h3>
+  <ul>
+    <li *ngFor="let meal of meals">
+      <img [src]="meal.imageUrl" alt="Meal Image" />
+      <h4>{{ meal.name }}</h4>
+      <p>{{ meal.description }}</p>
+      <p>Price: ${{ meal.price }}</p>
+      <button (click)="editMeal(meal)">Edit</button>
+      <button (click)="deleteMeal(meal._id!)">Delete</button>
+    </li>
+  </ul>
+  
